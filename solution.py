@@ -1,3 +1,5 @@
+# solution.py
+
 def shift_orbs(orbs, factor, constant, direction, transform_after):
     if direction not in ['Left', 'Right']:
         raise ValueError("Invalid direction. Please choose 'Left' or 'Right'.")
@@ -16,10 +18,10 @@ def shift_orbs(orbs, factor, constant, direction, transform_after):
     return orbs
 
 def shift_left(orbs):
-    return #code here
+    return #
 
 def shift_right(orbs):
-    return #code here
+    return #
 
 def transform_orbs(orbs, factor, constant):
     transformed_orbs = [x * factor + constant if i % 2 == 0 else x + constant for i, x in enumerate(orbs)]
