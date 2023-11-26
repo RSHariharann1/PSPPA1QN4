@@ -18,10 +18,10 @@ def shift_orbs(orbs, factor, constant, direction, transform_after):
     return orbs
 
 def shift_left(orbs):
-    return #
+    return orbs[1:] + [orbs[0]]
 
 def shift_right(orbs):
-    return #
+    return [orbs[-1]] + orbs[:-1]
 
 def transform_orbs(orbs, factor, constant):
     transformed_orbs = [x * factor + constant if i % 2 == 0 else x + constant for i, x in enumerate(orbs)]
